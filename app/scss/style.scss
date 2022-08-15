@@ -104,8 +104,26 @@
     font-size: 20px;
     line-height: 24px;
     max-width: 560px;
+
     p:not(:last-child) {
       margin-bottom: 25px;
     }
+  }
+}
+
+.works {
+  background-color: #101010;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+  &__link {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 270px;
   }
 }
