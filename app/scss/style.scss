@@ -86,3 +86,26 @@
     height: 75px;
   }
 }
+
+.about {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 100px;
+  }
+
+  &__text {
+    color: #101010;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 560px;
+    p:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
