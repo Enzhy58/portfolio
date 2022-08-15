@@ -3,3 +3,86 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .contacts {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 20px;
+
+    &__item:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &__img {
+      width: 48px;
+      height: 48px;
+      fill: #E7E7E7;
+    }
+  }
+
+  &__box {
+    max-width: 990px;
+    margin: auto 0;
+    z-index: 0;
+  }
+
+  &__title {
+    font-family: 'Centurygothic';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 118px;
+    text-align: center;
+    margin-bottom: 85px;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-family: 'Inter';
+    margin-top: 75px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 125px;
+      bottom: 0;
+      right: 0;
+      background-color: #229299;
+      z-index: -1;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 100px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #E7E7E7;
+    width: 300px;
+    height: 75px;
+  }
+}
