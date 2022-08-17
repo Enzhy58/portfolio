@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -15,14 +15,14 @@
       <div class="header__inner">
         <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="tel:+79273748682">
               <svg class="contacts__img">
                 <use xlink:href="images/sprite.svg#phone"></use>
               </svg>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="mailto:ang.borisova2015@yandex.ru">
               <svg class="contacts__img">
                 <use xlink:href="images/sprite.svg#mail"></use>
               </svg>
@@ -31,15 +31,19 @@
         </ul>
         <div class="header__box">
           <h1 class="header__title">
-            HTML <br> верстальщик
+            HTML-верстальщик
             <span class="header__subtitle">Анжелика Борисова</span>
           </h1>
           <ul class="header__btn">
             <li class="header__item">
-              <a class="header__link" href="#">Обо мне</a>
+              <a class="header__link" href="#about">
+                <span>Обо мне</span>
+              </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Мои работы</a>
+              <a class="header__link" href="#works">
+                <span>Мои работы</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -48,7 +52,7 @@
   </header>
 
   <main class="main">
-    <section class="about page-section">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="title">Обо мне</h2>
         <div class="about__inner">
@@ -86,46 +90,137 @@
       </div>
     </section>
 
-    <!-- <section class="skills">
+    <section class="skills page-section">
       <div class="container">
         <h2 class="title">Навыки и инструменты, которые я использую</h2>
-        <div class="skills__inner">
-          <ul class="skills__list">
-            <li class="skills__item">
-              <img class="skills__img" src="" alt="">
-              <span class="skills__name"></span>
-            </li>
-          </ul>
-        </div>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/1.png" alt="html">
+              <span class="skills__name">html</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/2.png" alt="css">
+              <span class="skills__name">css</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/3.png" alt="js">
+              <span class="skills__name">js</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/4.png" alt="jquery">
+              <span class="skills__name">jquery</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/5.png" alt="sass">
+              <span class="skills__name">sass</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/6.png" alt="pug">
+              <span class="skills__name">pug</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/7.png" alt="gulp">
+              <span class="skills__name">gulp</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/8.png" alt="git">
+              <span class="skills__name">git</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/9.png" alt="pixel perfect">
+              <span class="skills__name">pixel perfect</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/10.png" alt="vscode">
+              <span class="skills__name">vscode</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/11.png" alt="бэм">
+              <span class="skills__name">бэм</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/12.png" alt="Bootstrap">
+              <span class="skills__name">Bootstrap</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/14.png" alt="figma">
+              <span class="skills__name">figma</span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__box">
+              <img class="skills__img" src="images/skills/15.png" alt="photoshop">
+              <span class="skills__name">photoshop</span>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section> -->
+    </section>
 
-    <section class="works page-section">
+    <section class="works page-section" id="works">
       <div class="container">
         <h2 class="title">Мои работы</h2>
         <ul class="works__list">
           <li class="works__item">
-            <a class="works__link" href="http://origami.b927374j.beget.tech/" style="background-image: url(images/works/1.jpg);" target="_blank"></a>
+            <a class="works__link" href="http://origami.b927374j.beget.tech/"
+              style="background-image: url(images/works/1.jpg);" target="_blank">
+              <span>Оригами - сервис быстрой доставки японской еды</span>
+            </a>
           </li>
           <li class="works__item">
             <a class="works__link" href="http://b927374j.beget.tech/" style="background-image: url(images/works/2.jpg);"
-              target="_blank"></a>
+              target="_blank">
+              <span>Autoeurope - авто из Европы</span>
+            </a>
           </li>
           <li class="works__item">
-            <a class="works__link" href="http://charodejki.b927374j.beget.tech/" style="background-image: url(images/works/3.jpg);"
-              target="_blank"></a>
+            <a class="works__link" href="http://charodejki.b927374j.beget.tech/"
+              style="background-image: url(images/works/3.jpg);" target="_blank">
+              <span>Кондитерская Чародейки</span>
+            </a>
           </li>
           <li class="works__item">
-            <a class="works__link" href="http://japan.b927374j.beget.tech/" style="background-image: url(images/works/4.jpg);"
-              target="_blank"></a>
+            <a class="works__link" href="http://japan.b927374j.beget.tech/"
+              style="background-image: url(images/works/4.jpg);" target="_blank">
+              <span>Туры в Японию</span>
+            </a>
           </li>
           <li class="works__item">
-            <a class="works__link" href="http://grotto.b927374j.beget.tech/" style="background-image: url(images/works/5.jpg);"
-              target="_blank"></a>
+            <a class="works__link" href="http://grotto.b927374j.beget.tech/"
+              style="background-image: url(images/works/5.jpg);" target="_blank">
+              <span>Студия художественной татуировки - GrottoTattoo</span>
+            </a>
           </li>
           <li class="works__item">
-            <a class="works__link" href="http://portfolio.b927374j.beget.tech/" style="background-image: url(images/works/6.jpg);"
-              target="_blank"></a>
+            <a class="works__link" href="http://portfolio.b927374j.beget.tech/"
+              style="background-image: url(images/works/6.jpg);" target="_blank">
+              <span>Портфолио Анжелики Борисовой</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -136,26 +231,27 @@
     <div class="container">
       <div class="footer__inner">
         <address class="footer__box">
-          <a class="footer__link footer__link--mail" href="mailto:ang.borisova2015@yandex.ru">ang.borisova2015@yandex.ru</a>
+          <a class="footer__link footer__link--mail"
+            href="mailto:ang.borisova2015@yandex.ru">ang.borisova2015@yandex.ru</a>
           <a class="footer__link footer__link--phone" href="tel:+79273748682">+79273748682</a>
         </address>
         <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="#" target="_blank">
               <svg class="contacts__img">
                 <use xlink:href="images/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="#"target="_blank">
               <svg class="contacts__img">
                 <use xlink:href="images/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="#" target="_blank">
               <svg class="contacts__img">
                 <use xlink:href="images/sprite.svg#telegram"></use>
               </svg>
@@ -165,6 +261,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
